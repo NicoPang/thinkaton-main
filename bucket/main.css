@@ -17,7 +17,30 @@ body {
 
 nav {
     background: #7D6783;
-    padding: 30px;
     margin: 30px;
     border-radius: 50vh;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+nav a {
+    padding: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #B8A7C8;
+    color: black;
+}
+
+nav .right {
+    float: right;
+}
+
+.main {
+    margin-left: 100px;
+    margin-right: 100px;
 }
