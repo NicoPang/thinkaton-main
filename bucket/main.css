@@ -1,0 +1,23 @@
+body {
+    font-family: 'Roboto';
+    background: #FFFFFF;
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    font-size: 50px;
+    background: #E8B1C1;
+    padding: 30px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+nav {
+    background: #7D6783;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 50vh;
+}
