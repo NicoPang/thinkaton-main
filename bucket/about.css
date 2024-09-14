@@ -1,0 +1,24 @@
+.main {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+.left-banner {
+    background: #46376A;
+    color: white;
+    padding: 30px;
+}
+
+.right-banner {
+    padding: 30px;
+}
+
+.right-banner h1 {
+    font-size: 50px;
+}
+
+.portrait {
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+}

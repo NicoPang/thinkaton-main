@@ -6,10 +6,10 @@ class Header extends HTMLElement {
             </div>
 
             <nav>
-                <a href="#" class="left">HOME</a>
+                <a href="index.html" class="left">HOME</a>
                 <a href="#" class="left">PROJECTS</a>
                 <a href="#" class="left">TINKATON</a>
-                <a href="#" class="right">ABOUT ME</a>
+                <a href="about.html" class="right">ABOUT ME</a>
             </nav>
         `;
     }
