@@ -9,7 +9,7 @@ class Header extends HTMLElement {
                 <a href="index.html" class="left">HOME</a>
                 <a href="#" class="left">PROJECTS</a>
                 <a href="#" class="left">TINKATON</a>
-                <a href="about.html" class="right">ABOUT ME</a>
+                <a href="about.html" class="right">ABOUT</a>
             </nav>
         `;
     }

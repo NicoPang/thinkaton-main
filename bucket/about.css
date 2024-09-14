@@ -7,11 +7,12 @@
 .left-banner {
     background: #46376A;
     color: white;
-    padding: 30px;
+    padding: 50px;
 }
 
 .right-banner {
     padding: 30px;
+    width: 500px;
 }
 
 .right-banner h1 {
@@ -21,4 +22,9 @@
 .portrait {
     border-radius: 50%;
     border: 5px solid #FFFFFF;
+}
+
+.links a img {
+    width: 30px;
+    fill: white;
 }
