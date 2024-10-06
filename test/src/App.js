@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
+import Posts from "./pages/Posts";
 import About from "./pages/About";
 
 function App() {
@@ -8,13 +9,13 @@ function App() {
         <BrowserRouter>
             <nav>
                 <Link to="/">HOME</Link>
-                <Link to="/hi">HI</Link>
+                <Link to="/posts">POSTS</Link>
                 <Link to="/about" className="right">ABOUT</Link>
 
             </nav>
             <Routes>
-                <Route exact path="/" element={ <Home /> } errorElement={ <h1>This page is dead haha</h1> } />
-                <Route path="/hi" element={<h1>hi hi</h1>} />
+                <Route exact path="/" element={ <Home /> } />
+                <Route path="/posts" element={ <Posts /> } />
                 <Route path="/about" element={ <About /> } />
                 <Route element={ <Navigate to="/" /> } />
             </Routes>
