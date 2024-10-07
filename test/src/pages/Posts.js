@@ -1,17 +1,25 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Posts() {
-    const [data, setData] = useState(null);
+    const [list, setList] = useState(null);
+    
+    const fetchData = async () => {
+        const data = await fetch('https://api.thinkaton.com/post/search')
+                    .then(response => response.json())
+                    .then(json => JSON.parse(json.body));
+        const listItems = data.map(post =>  <li key={post}><Link to={post}>{post}</Link></li>);
+        setList(listItems);
+        
+    }
 
     useEffect(() => {
-        fetch('https://api.thinkaton.com/posts/search')
-        .then(response => response.json())
-        .then(json => setData(json))
+        fetchData();
     }, []);
 
     return (
         <div>
-            {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading...'}
+            {list ? <ul>{list}</ul> : 'Loading...'}
         </div>
     )
 }
